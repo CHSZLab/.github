@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f1923"/>
+      <stop offset="100%" stop-color="#1a2332"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#c1002a"/>
+      <stop offset="100%" stop-color="#e63946"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="260" rx="16" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="0.5">
+    <line x1="0" y1="52" x2="900" y2="52"/>
+    <line x1="0" y1="104" x2="900" y2="104"/>
+    <line x1="0" y1="156" x2="900" y2="156"/>
+    <line x1="0" y1="208" x2="900" y2="208"/>
+  </g>
+
+  <!-- Left: Title -->
+  <text x="50" y="95" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="56" font-weight="700" fill="#e0e0e0" letter-spacing="2">
+    <tspan fill="#c1002a">CHSZ</tspan><tspan fill="#78909c">Lab</tspan>
+  </text>
+  <text x="50" y="130" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="16" fill="#90a4ae">
+    Algorithm Engineering Group
+  </text>
+  <text x="50" y="155" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" fill="#607d8b">
+    Heidelberg University
+  </text>
+
+  <!-- Badges -->
+  <rect x="50" y="178" width="80" height="24" rx="12" fill="#263238"/>
+  <text x="90" y="194" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" fill="#80cbc4" text-anchor="middle">Python</text>
+
+  <rect x="140" y="178" width="65" height="24" rx="12" fill="#263238"/>
+  <text x="172" y="194" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" fill="#80cbc4" text-anchor="middle">C++</text>
+
+  <rect x="215" y="178" width="90" height="24" rx="12" fill="#263238"/>
+  <text x="260" y="194" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" fill="#80cbc4" text-anchor="middle">PyPI</text>
+
+  <!-- Right side: Abstract graph showing partitioning -->
+
+  <!-- Partition boundary (subtle) -->
+  <path d="M 640 30 Q 660 130, 640 230" stroke="#c1002a" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="8,5"/>
+
+  <!-- Left partition nodes (blue tones) -->
+  <circle cx="540" cy="70" r="10" fill="#42a5f5"/>
+  <circle cx="580" cy="120" r="10" fill="#42a5f5"/>
+  <circle cx="530" cy="150" r="10" fill="#42a5f5"/>
+  <circle cx="560" cy="200" r="10" fill="#42a5f5"/>
+  <circle cx="610" cy="65" r="10" fill="#42a5f5"/>
+  <circle cx="620" cy="180" r="10" fill="#42a5f5"/>
+
+  <!-- Left partition edges -->
+  <line x1="548" y1="76" x2="574" y2="114" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="536" y1="78" x2="526" y2="142" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="538" y1="154" x2="554" y2="196" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="586" y1="128" x2="566" y2="194" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="550" y1="70" x2="600" y2="67" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="586" y1="126" x2="614" y2="174" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <line x1="604" y1="71" x2="584" y2="114" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Right partition nodes (orange tones) -->
+  <circle cx="700" cy="60" r="10" fill="#ff8a65"/>
+  <circle cx="750" cy="110" r="10" fill="#ff8a65"/>
+  <circle cx="690" cy="140" r="10" fill="#ff8a65"/>
+  <circle cx="720" cy="195" r="10" fill="#ff8a65"/>
+  <circle cx="780" cy="180" r="10" fill="#ff8a65"/>
+  <circle cx="770" cy="55" r="10" fill="#ff8a65"/>
+
+  <!-- Right partition edges -->
+  <line x1="708" y1="66" x2="744" y2="104" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+  <line x1="696" y1="68" x2="686" y2="132" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+  <line x1="696" y1="146" x2="714" y2="189" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+  <line x1="756" y1="116" x2="774" y2="174" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+  <line x1="728" y1="195" x2="772" y2="184" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+  <line x1="710" y1="60" x2="760" y2="56" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+  <line x1="744" y1="110" x2="698" y2="136" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+  <line x1="776" y1="63" x2="754" y2="104" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Cross-partition edges (cut edges, red dashed) -->
+  <line x1="618" y1="68" x2="692" y2="62" stroke="#ef5350" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.5"/>
+  <line x1="588" y1="124" x2="682" y2="138" stroke="#ef5350" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.5"/>
+  <line x1="626" y1="186" x2="712" y2="192" stroke="#ef5350" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.5"/>
+
+  <!-- Bottom text -->
+  <text x="660" y="248" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#546e7a" text-anchor="middle">
+    graph partitioning, clustering, independent sets, orientation
+  </text>
+</svg>
