@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/CHSZLab/.github/main/logo/chszlab-banner.png" alt="CHSZLab" width="900"/>
 </p>
 
-We develop high-performance algorithms for combinatorial optimization problems on graphs at [Heidelberg University](https://ae.ifi.uni-heidelberg.de/).
+We develop high-performance algorithms for combinatorial optimization problems on graphs at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de/).
 
 ## CHSZLabLib
 
