@@ -27,9 +27,9 @@ Covers graph partitioning, minimum/maximum cuts, community detection, independen
 | Domain | Libraries |
 |:-------|:----------|
 | Partitioning & Cuts | [KaHIP](https://github.com/KaHIP/KaHIP), [HeiStream](https://github.com/KaHIP/HeiStream), [VieCut](https://github.com/VieCut/VieCut), [fpt-max-cut](https://github.com/KaHIP/fpt-max-cut) |
-| Clustering | [VieClus](https://github.com/KaHIP/VieClus), [SCC](https://github.com/KaHIP/ScalableCorrelationClustering), [CluStRE](https://github.com/KaHIP/CluStRE), [HeidelbergMotifClustering](https://github.com/HeiMotifClus/HeidelbergMotifClustering) |
-| Hypergraphs | [FREIGHT](https://github.com/KaHIP/FREIGHT), [HeiCut](https://github.com/HeiCut/HeiCut), [HyperMIS](https://github.com/KaHIP/HyperMIS), [HeiHGM](https://github.com/HeiHGM/HeiHGM) |
-| Independent Sets | [KaMIS](https://github.com/KaMIS/KaMIS), [CHILS](https://github.com/CHILS-HE/CHILS) |
+| Clustering | [VieClus](https://github.com/KaHIP/VieClus), [SCC](https://github.com/KaHIP/ScalableCorrelationClustering), [CluStRE](https://github.com/KaHIP/CluStRE), [HeidelbergMotifClustering](https://github.com/LocalClustering/HeidelbergMotifClustering) |
+| Hypergraphs | [FREIGHT](https://github.com/KaHIP/FREIGHT), [HeiCut](https://github.com/HeiCut/HeiCut), [HyperMIS](https://github.com/KarlsruheMIS/HyperMIS), [HeiHGM](https://github.com/HeiHGM/Bmatching) |
+| Independent Sets | [KaMIS](https://github.com/KarlsruheMIS/KaMIS), [CHILS](https://github.com/KarlsruheMIS/CHILS) |
 | Process Mapping | [SharedMap](https://github.com/KaHIP/SharedMap) |
 | Edge Orientation | [HeiOrient](https://github.com/HeiOrient/HeiOrient) |
 | Dynamic Algorithms | [DynDeltaOrientation](https://github.com/DynGraphLab/DynDeltaOrientation), [DynMatch](https://github.com/DynGraphLab/DynMatch), [DynWMIS](https://github.com/DynGraphLab/DynWMIS) |
