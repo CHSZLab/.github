@@ -1,0 +1,35 @@
+# CHSZLab -- Algorithm Engineering Group Heidelberg
+
+We develop high-performance algorithms for combinatorial optimization problems on graphs at [Heidelberg University](https://ae.ifi.uni-heidelberg.de/).
+
+## CHSZLabLib
+
+**[CHSZLabLib](https://github.com/CHSZLab/CHSZLabLib)** wraps our state-of-the-art C++ solvers into a single, easy-to-use Python package.
+
+```bash
+pip install chszlablib
+```
+
+```python
+from chszlablib import Graph, Decomposition
+
+g = Graph.from_metis("network.graph")
+result = Decomposition.partition(g, num_parts=8, mode="strong")
+print(f"Edge cut: {result.edgecut}")
+```
+
+Covers graph partitioning, minimum/maximum cuts, community detection, independent sets, edge orientation, streaming algorithms, hypergraph problems, and fully dynamic graph algorithms.
+
+### Integrated Libraries
+
+| Domain | Libraries |
+|:-------|:----------|
+| Partitioning & Cuts | [KaHIP](https://github.com/KaHIP/KaHIP), [HeiStream](https://github.com/KaHIP/HeiStream), [VieCut](https://github.com/VieCut/VieCut), [fpt-max-cut](https://github.com/KaHIP/fpt-max-cut) |
+| Clustering | [VieClus](https://github.com/KaHIP/VieClus), [SCC](https://github.com/KaHIP/ScalableCorrelationClustering), [CluStRE](https://github.com/KaHIP/CluStRE), [HeidelbergMotifClustering](https://github.com/HeiMotifClus/HeidelbergMotifClustering) |
+| Hypergraphs | [FREIGHT](https://github.com/KaHIP/FREIGHT), [HeiCut](https://github.com/HeiCut/HeiCut), [HyperMIS](https://github.com/KaHIP/HyperMIS), [HeiHGM](https://github.com/HeiHGM/HeiHGM) |
+| Independent Sets | [KaMIS](https://github.com/KaMIS/KaMIS), [CHILS](https://github.com/CHILS-HE/CHILS) |
+| Process Mapping | [SharedMap](https://github.com/KaHIP/SharedMap) |
+| Edge Orientation | [HeiOrient](https://github.com/HeiOrient/HeiOrient) |
+| Dynamic Algorithms | [DynDeltaOrientation](https://github.com/DynGraphLab/DynDeltaOrientation), [DynMatch](https://github.com/DynGraphLab/DynMatch), [DynWMIS](https://github.com/DynGraphLab/DynWMIS) |
+
+For full algorithmic control and peak performance, use the original C++ repositories directly.
