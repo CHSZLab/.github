@@ -15,7 +15,7 @@ Detecting communities and dense substructures without a prescribed number of clu
 **Minimum & Maximum Cuts.**
 Computing minimum cuts (both exact and heuristic) on graphs and hypergraphs, including parallel cactus-based algorithms that enumerate all minimum cuts. On the maximization side, FPT kernelization combined with heuristic and exact solvers for the NP-hard maximum cut problem.
 
-**Independent Sets & Packing.**
+**Independent Sets, Matching & Packing.**
 Finding maximum (weight) independent sets on graphs and hypergraphs using reduction-based branch-and-bound, evolutionary algorithms, concurrent local search, and GNN-guided kernelization. We also cover hypergraph b-matching (offline and streaming) and maximum 2-packing sets.
 
 **Edge Orientation.**
