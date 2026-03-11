@@ -4,6 +4,26 @@
 
 We develop high-performance algorithms for combinatorial optimization problems on graphs at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de/).
 
+### Problems We Cover
+
+**Graph Partitioning.**
+Dividing a graph into k roughly equal-sized blocks while minimizing the edges between them. Our solvers range from multi-level methods with strong balance guarantees to streaming algorithms that partition graphs too large to fit in memory. We also cover node separators, nested dissection orderings, and process mapping (assigning communication tasks to hierarchical processor topologies).
+
+**Graph Clustering.**
+Detecting communities and dense substructures without a prescribed number of clusters. This includes modularity-maximizing evolutionary methods, correlation clustering on signed graphs, local triangle-motif-based clustering, and streaming approaches that cluster graphs in a single pass.
+
+**Minimum & Maximum Cuts.**
+Computing minimum cuts (both exact and heuristic) on graphs and hypergraphs, including parallel cactus-based algorithms that enumerate all minimum cuts. On the maximization side, FPT kernelization combined with heuristic and exact solvers for the NP-hard maximum cut problem.
+
+**Independent Sets & Packing.**
+Finding maximum (weight) independent sets on graphs and hypergraphs using reduction-based branch-and-bound, evolutionary algorithms, concurrent local search, and GNN-guided kernelization. We also cover hypergraph b-matching (offline and streaming) and maximum 2-packing sets.
+
+**Edge Orientation.**
+Orienting the edges of an undirected graph to minimize the maximum out-degree. Our algorithms include greedy 2-approximations, DFS-based local search, and eager path search methods.
+
+**Dynamic Graph Algorithms.**
+Maintaining solutions under incremental edge insertions and deletions. We provide fully dynamic algorithms for edge orientation, approximate edge orientation, maximum matching, and weighted maximum independent set, all designed for low amortized update cost.
+
 ## CHSZLabLib
 
 **[CHSZLabLib](https://github.com/CHSZLab/CHSZLabLib)** wraps our state-of-the-art C++ solvers into a single, easy-to-use Python package.
