@@ -4,10 +4,100 @@
       <stop offset="0%" stop-color="#0f1923"/>
       <stop offset="100%" stop-color="#1a2332"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#c1002a"/>
-      <stop offset="100%" stop-color="#e63946"/>
-    </linearGradient>
+
+    <!-- Glow filters -->
+    <filter id="glow-blue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#42a5f5" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-purple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ab47bc" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-teal" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#26c6da" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-green" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#66bb6a" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-orange" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ffa726" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-coral" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ef5350" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-pink" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ec407a" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-gold" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#ffca28" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-lime" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#c6ff00" flood-opacity="0.5" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-sky" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#29b6f6" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-rose" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#f48fb1" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow-lavender" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#b39ddb" flood-opacity="0.6" result="color"/>
+      <feComposite in="color" in2="blur" operator="in" result="glow"/>
+      <feMerge><feMergeNode in="glow"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <style>
+      @keyframes pulse {
+        0%, 100% { opacity: 0.85; r: 10; }
+        50% { opacity: 1; r: 13; }
+      }
+      .node { animation: pulse 3s ease-in-out infinite; }
+      .n1 { animation-delay: 0s; }
+      .n2 { animation-delay: 0.25s; }
+      .n3 { animation-delay: 0.5s; }
+      .n4 { animation-delay: 0.75s; }
+      .n5 { animation-delay: 1.0s; }
+      .n6 { animation-delay: 1.25s; }
+      .n7 { animation-delay: 1.5s; }
+      .n8 { animation-delay: 1.75s; }
+      .n9 { animation-delay: 2.0s; }
+      .n10 { animation-delay: 2.25s; }
+      .n11 { animation-delay: 2.5s; }
+      .n12 { animation-delay: 2.75s; }
+    </style>
   </defs>
 
   <!-- Background -->
@@ -42,53 +132,52 @@
   <rect x="215" y="178" width="90" height="24" rx="12" fill="#263238"/>
   <text x="260" y="194" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="10" fill="#80cbc4" text-anchor="middle">PyPI</text>
 
-  <!-- Right side: Abstract graph showing partitioning -->
+  <!-- Right side: Unified graph with colorful vertices -->
 
-  <!-- Partition boundary (subtle) -->
-  <path d="M 640 30 Q 660 130, 640 230" stroke="#c1002a" stroke-width="1.5" fill="none" opacity="0.3" stroke-dasharray="8,5"/>
+  <!-- All edges in uniform style -->
+  <!-- Original left cluster edges -->
+  <line x1="548" y1="76" x2="574" y2="114" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="536" y1="78" x2="526" y2="142" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="538" y1="154" x2="554" y2="196" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="586" y1="128" x2="566" y2="194" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="550" y1="70" x2="600" y2="67" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="586" y1="126" x2="614" y2="174" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="604" y1="71" x2="584" y2="114" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
 
-  <!-- Left partition nodes (blue tones) -->
-  <circle cx="540" cy="70" r="10" fill="#42a5f5"/>
-  <circle cx="580" cy="120" r="10" fill="#42a5f5"/>
-  <circle cx="530" cy="150" r="10" fill="#42a5f5"/>
-  <circle cx="560" cy="200" r="10" fill="#42a5f5"/>
-  <circle cx="610" cy="65" r="10" fill="#42a5f5"/>
-  <circle cx="620" cy="180" r="10" fill="#42a5f5"/>
+  <!-- Original right cluster edges -->
+  <line x1="708" y1="66" x2="744" y2="104" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="696" y1="68" x2="686" y2="132" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="696" y1="146" x2="714" y2="189" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="756" y1="116" x2="774" y2="174" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="728" y1="195" x2="772" y2="184" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="710" y1="60" x2="760" y2="56" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="744" y1="110" x2="698" y2="136" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="776" y1="63" x2="754" y2="104" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
 
-  <!-- Left partition edges -->
-  <line x1="548" y1="76" x2="574" y2="114" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
-  <line x1="536" y1="78" x2="526" y2="142" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
-  <line x1="538" y1="154" x2="554" y2="196" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
-  <line x1="586" y1="128" x2="566" y2="194" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
-  <line x1="550" y1="70" x2="600" y2="67" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
-  <line x1="586" y1="126" x2="614" y2="174" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
-  <line x1="604" y1="71" x2="584" y2="114" stroke="#42a5f5" stroke-width="1.5" opacity="0.5"/>
+  <!-- Cross edges (now solid, same style) -->
+  <line x1="618" y1="68" x2="692" y2="62" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="588" y1="124" x2="682" y2="138" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
+  <line x1="626" y1="186" x2="712" y2="192" stroke="#546e7a" stroke-width="1.5" opacity="0.4"/>
 
-  <!-- Right partition nodes (orange tones) -->
-  <circle cx="700" cy="60" r="10" fill="#ff8a65"/>
-  <circle cx="750" cy="110" r="10" fill="#ff8a65"/>
-  <circle cx="690" cy="140" r="10" fill="#ff8a65"/>
-  <circle cx="720" cy="195" r="10" fill="#ff8a65"/>
-  <circle cx="780" cy="180" r="10" fill="#ff8a65"/>
-  <circle cx="770" cy="55" r="10" fill="#ff8a65"/>
+  <!-- Nodes: colorful and flashing -->
+  <!-- Left cluster nodes -->
+  <circle class="node n1" cx="540" cy="70" r="10" fill="#42a5f5" filter="url(#glow-blue)"/>
+  <circle class="node n2" cx="580" cy="120" r="10" fill="#ab47bc" filter="url(#glow-purple)"/>
+  <circle class="node n3" cx="530" cy="150" r="10" fill="#26c6da" filter="url(#glow-teal)"/>
+  <circle class="node n4" cx="560" cy="200" r="10" fill="#66bb6a" filter="url(#glow-green)"/>
+  <circle class="node n5" cx="610" cy="65" r="10" fill="#ffa726" filter="url(#glow-orange)"/>
+  <circle class="node n6" cx="620" cy="180" r="10" fill="#ef5350" filter="url(#glow-coral)"/>
 
-  <!-- Right partition edges -->
-  <line x1="708" y1="66" x2="744" y2="104" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-  <line x1="696" y1="68" x2="686" y2="132" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-  <line x1="696" y1="146" x2="714" y2="189" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-  <line x1="756" y1="116" x2="774" y2="174" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-  <line x1="728" y1="195" x2="772" y2="184" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-  <line x1="710" y1="60" x2="760" y2="56" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-  <line x1="744" y1="110" x2="698" y2="136" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-  <line x1="776" y1="63" x2="754" y2="104" stroke="#ff8a65" stroke-width="1.5" opacity="0.5"/>
-
-  <!-- Cross-partition edges (cut edges, red dashed) -->
-  <line x1="618" y1="68" x2="692" y2="62" stroke="#ef5350" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.5"/>
-  <line x1="588" y1="124" x2="682" y2="138" stroke="#ef5350" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.5"/>
-  <line x1="626" y1="186" x2="712" y2="192" stroke="#ef5350" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.5"/>
+  <!-- Right cluster nodes -->
+  <circle class="node n7" cx="700" cy="60" r="10" fill="#ec407a" filter="url(#glow-pink)"/>
+  <circle class="node n8" cx="750" cy="110" r="10" fill="#ffca28" filter="url(#glow-gold)"/>
+  <circle class="node n9" cx="690" cy="140" r="10" fill="#c6ff00" filter="url(#glow-lime)"/>
+  <circle class="node n10" cx="720" cy="195" r="10" fill="#29b6f6" filter="url(#glow-sky)"/>
+  <circle class="node n11" cx="780" cy="180" r="10" fill="#f48fb1" filter="url(#glow-rose)"/>
+  <circle class="node n12" cx="770" cy="55" r="10" fill="#b39ddb" filter="url(#glow-lavender)"/>
 
   <!-- Bottom text -->
   <text x="660" y="248" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="11" fill="#546e7a" text-anchor="middle">
-    graph partitioning, clustering, independent sets, orientation
+    Combinatorial Optimization on (Hyper)graphs
   </text>
 </svg>
