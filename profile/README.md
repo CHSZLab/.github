@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/CHSZLab/.github/main/logo/chszlab-banner.png" alt="CHSZLab" width="900"/>
 </p>
 
-We develop high-performance algorithms for combinatorial optimization problems on graphs at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de/).
+We develop high-performance algorithms and open-source software for combinatorial optimization problems on graphs and hypergraphs at the [Algorithm Engineering Group, Heidelberg University](https://ae.ifi.uni-heidelberg.de/). Combinatorial optimization on graphs addresses the challenge of finding the best solution among a vast, discrete set of possibilities defined by the structure of a network. These problems arise throughout science and engineering, from distributing workloads across processors and detecting communities in social networks to designing circuits and solving large sparse linear systems.
 
 ### Problems We Cover
 
