@@ -28,10 +28,10 @@ Covers graph partitioning, minimum/maximum cuts, community detection, independen
 |:-------|:----------|
 | Partitioning & Cuts | [KaHIP](https://github.com/KaHIP/KaHIP), [HeiStream](https://github.com/KaHIP/HeiStream), [VieCut](https://github.com/KaHIP/VieCut), [fpt-max-cut](https://github.com/KaHIP/fpt-max-cut) |
 | Clustering | [VieClus](https://github.com/KaHIP/VieClus), [SCC](https://github.com/KaHIP/ScalableCorrelationClustering), [CluStRE](https://github.com/KaHIP/CluStRE), [HeidelbergMotifClustering](https://github.com/KaHIP/HeidelbergMotifClustering) |
-| Hypergraphs | [FREIGHT](https://github.com/KaHIP/FREIGHT), [HeiCut](https://github.com/HeiCut/HeiCut), [HyperMIS](https://github.com/KarlsruheMIS/HyperMIS), [HeiHGM](https://github.com/HeiHGM/Bmatching) |
-| Independent Sets | [KaMIS](https://github.com/KarlsruheMIS/KaMIS), [CHILS](https://github.com/KarlsruheMIS/CHILS) |
+| Hypergraphs | [FREIGHT](https://github.com/KaHIP/FREIGHT), [HeiCut](https://github.com/HeiCut/HeiCut), [HyperMIS](https://github.com/KarlsruheMIS/HyperMIS), [HeiHGM](https://github.com/HeiHGM/Bmatching), [HeiHGM-Streaming](https://github.com/HeiHGM/Streaming) |
+| Independent Sets | [KaMIS](https://github.com/KarlsruheMIS/KaMIS), [CHILS](https://github.com/KarlsruheMIS/CHILS), [LearnAndReduce](https://github.com/KarlsruheMIS/LearnAndReduce), [red2pack](https://github.com/KarlsruheMIS/red2pack) |
 | Process Mapping | [SharedMap](https://github.com/KaHIP/SharedMap) |
 | Edge Orientation | [HeiOrient](https://github.com/HeiOrient/HeiOrient) |
-| Dynamic Algorithms | [DynDeltaOrientation](https://github.com/DynGraphLab/DynDeltaOrientation), [DynMatch](https://github.com/DynGraphLab/DynMatch), [DynWMIS](https://github.com/DynGraphLab/DynWMIS) |
+| Dynamic Algorithms | [DynDeltaOrientation](https://github.com/DynGraphLab/DynDeltaOrientation), [DynDeltaApprox](https://github.com/DynGraphLab/DynDeltaApprox), [DynMatch](https://github.com/DynGraphLab/DynMatch), [DynWMIS](https://github.com/DynGraphLab/DynWMIS) |
 
 For full algorithmic control and peak performance, use the original C++ repositories directly.
