@@ -6,7 +6,7 @@ We develop high-performance algorithms and open-source software for combinatoria
 
 ### Problems We Cover
 
-**Graph Partitioning.**
+**(Hyper)Graph Partitioning.**
 Dividing a graph into k roughly equal-sized blocks while minimizing the edges between them. Our solvers range from multi-level methods with strong balance guarantees to streaming algorithms that partition graphs too large to fit in memory. We also cover node separators, nested dissection orderings, and process mapping (assigning communication tasks to hierarchical processor topologies).
 
 **Graph Clustering.**
