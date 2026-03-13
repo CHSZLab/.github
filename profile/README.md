@@ -29,6 +29,7 @@ Maintaining solutions under incremental edge insertions and deletions. We provid
 **[CHSZLabLib](https://github.com/CHSZLab/CHSZLabLib)** wraps our state-of-the-art C++ solvers into a single, easy-to-use Python package.
 
 ```bash
+python -m venv .venv && source .venv/bin/activate
 pip install chszlablib
 ```
 
