@@ -56,3 +56,7 @@ Covers graph partitioning, minimum/maximum cuts, community detection, independen
 | Dynamic Algorithms | [DynDeltaOrientation](https://github.com/DynGraphLab/DynDeltaOrientation), [DynDeltaApprox](https://github.com/DynGraphLab/DynDeltaApprox), [DynMatch](https://github.com/DynGraphLab/DynMatch), [DynWMIS](https://github.com/DynGraphLab/DynWMIS) |
 
 For full algorithmic control and peak performance, use the original C++ repositories directly.
+
+## Agentic Algorithm Engineering
+
+**[AgenticAlgorithmEngineering](https://github.com/CHSZLab/AgenticAlgorithmEngineering)** defines a methodology for autonomous performance tuning via the Algorithm Engineering cycle. An AI agent iteratively designs, analyzes, implements, and experimentally evaluates code changes, driven by falsifiable hypotheses. Contributions welcome!
